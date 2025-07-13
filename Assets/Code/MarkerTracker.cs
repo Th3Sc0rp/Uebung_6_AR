@@ -78,7 +78,7 @@ public class MarkerTracker : MonoBehaviour
         foreach (var image in imageManager.trackables)
         {
             SpawnPrefab(image);
-            break; // Nur eines gleichzeitig
+            break; 
         }
     }
 }

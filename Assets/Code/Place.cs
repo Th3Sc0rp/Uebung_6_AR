@@ -28,7 +28,7 @@ public class Place : MonoBehaviour
             Debug.Log("Awake() Prefab in Liste: " + prefab?.name);
         }
 
-        // Marker-Tracking initial deaktivieren
+        
         if (markerTracker != null)
         {
             markerTracker.SetAktiv(false);
@@ -99,7 +99,7 @@ public class Place : MonoBehaviour
             aktuellerModus = Platziermodus.Marker;
             Debug.Log("Modus: Marker Tracking");
 
-            // Manuell platzierte Objekte entfernen
+            
             foreach (var obj in platzierteObjekte)
             {
                 if (obj != null)
